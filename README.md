@@ -1655,6 +1655,7 @@ def normalize_rectangle(rect):
 
 
 ```python
+#This error in rectangle coordinates was made intentionally to test whether or not the creation and use of the assertion statement was successful.
 print(normalize_rectangle((0.0, 1.0, 2.0)))
 ```
 
@@ -1680,6 +1681,7 @@ print(normalize_rectangle((0.0, 1.0, 2.0)))
 
 
 ```python
+#This error in rectangle coordinates was made intentionally to test whether or not the creation and use of the assertion statement was successful.
 print(normalize_rectangle((4.0, 2.0, 1.0, 5.0)))
 ```
 

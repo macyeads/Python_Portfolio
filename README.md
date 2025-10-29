@@ -1024,19 +1024,15 @@ print('boiling point of water in Kelvin:', fahr_to_kelvin(212.0))
 
 
 ```python
-print('Again, temperature in Kelvin was:', temp_k)
+temp_k = fahr_to_kelvin(212.0)
 ```
 
 
-    ---------------------------------------------------------------------------
+```python
+print('Again, temperature in Kelvin was:', temp_k)
+```
 
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-10-eed2471d229b> in <module>
-    ----> 1 print('Again, temperature in Kelvin was:', temp_k)
-    
-
-    NameError: name 'temp_k' is not defined
+    Again, temperature in Kelvin was: 373.15
 
 
 

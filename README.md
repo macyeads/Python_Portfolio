@@ -379,6 +379,93 @@ print(numpy.mean(data, axis=1))
 
 ```python
 ```
+# Data Visualization (Analyzing Data Part 3)
+```python
+import numpy
+data = numpy.loadtxt(fname ='inflammation-01.csv', delimiter =',')
+```
+
+
+```python
+#Heat map of patient inflammation over time
+import matplotlib.pyplot
+image = matplotlib.pyplot.imshow(data)
+matplotlib.pyplot.show()
+```
+
+
+![png](output_1_0.png)
+<img width="178" height="251" alt="output_1_0" src="https://github.com/user-attachments/assets/79ad5879-d84d-4c22-8873-cfb4fe355f0f" />
+
+
+
+```python
+# Average inflmmation over time
+
+ave_inflammation = numpy.mean(data, axis=0)
+ave_plot = matplotlib.pyplot.plot(ave_inflammation)
+matplotlib.pyplot.show()
+```
+
+
+![png](output_2_0.png)
+<img width="368" height="248" alt="output_2_0" src="https://github.com/user-attachments/assets/126c5156-89aa-4b2a-93b1-aeaffe8b91a4" />
+
+
+
+```python
+max_plot = matplotlib.pyplot.plot(numpy.amax(data, axis=0))
+matplotlib.pyplot.show()
+```
+
+
+![png](output_3_0.png)
+<img width="378" height="248" alt="output_3_0" src="https://github.com/user-attachments/assets/89314fa1-8398-4126-8f64-322d82823f03" />
+
+
+
+```python
+min_plot = matplotlib.pyplot.plot(numpy.amin(data, axis=0))
+matplotlib.pyplot.show()
+```
+
+
+![png](output_4_0.png)
+<img width="362" height="248" alt="output_4_0" src="https://github.com/user-attachments/assets/0b6b9aa8-7412-429b-96a3-fab74f3d6643" />
+
+
+
+```python
+fig = matplotlib.pyplot.figure(figsize = (10.0, 3.0))
+
+axes1 = fig.add_subplot(1, 3, 1)
+axes2 = fig.add_subplot(1, 3, 2)
+axes3 = fig.add_subplot(1, 3, 3)
+
+axes1.set_ylabel('average')
+axes1.plot(numpy.mean(data, axis = 0))
+
+axes2.set_ylabel('max')
+axes2.plot(numpy.amax(data, axis = 0))
+
+axes3.set_ylabel('min')
+axes3.plot(numpy.amin(data, axis =0))
+
+fig.tight_layout()
+
+matplotlib.pyplot.savefig("inflammation.png")
+matplotlib.pyplot.show()
+```
+
+
+![png](output_5_0.png)
+<img width="712" height="208" alt="output_5_0" src="https://github.com/user-attachments/assets/d8a1a343-0a2d-458d-b3fd-e2395251c1f0" />
+
+
+
+```python
+
+```
 
 ## Storing Values in Lists
 

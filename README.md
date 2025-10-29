@@ -686,6 +686,7 @@ for filename in filenames:
 
 
 ![png](output_2_1.png)
+<img width="712" height="208" alt="output_2_1" src="https://github.com/user-attachments/assets/a04c82f0-c782-4e7d-a22a-d0442e00f34b" />
 
 
     inflammation-02.csv

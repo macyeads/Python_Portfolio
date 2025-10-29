@@ -378,6 +378,7 @@ print(numpy.mean(data, axis=1))
 
 
 ```python
+```
 
 ## Storing Values in Lists
 
@@ -534,6 +535,7 @@ print('Omitting ending index:', sond)
 
 
 ```python
+```
 ## Using Loops
 ```python
 odds = [1,3,5,7]
@@ -632,6 +634,7 @@ print(len(name))
 
 
 ```python
+```
 ## Using Multiple Files
 ```python
 import glob
@@ -701,6 +704,7 @@ for filename in filenames:
 
 
 ```python
+```
 ## Making Choices
 ## Functions (1, 2, 3, 4)
 ## Defensive Programming
